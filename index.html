@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+
     <meta name="google-site-verification" content="HKCE4QC8VwxDaVS2wOBW_fZQzs6zpLlnnvCATTT54-M" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="الله">
+            <meta name="description" content="جوجل">
+            <meta name="description" content="gogle">
     <meta name="description" content="Mariam Ehab">
      <meta name="description" content="Marwan Hany EL-Nagar">
     <meta name="description" content="Marwan Hany ">
@@ -37,431 +41,285 @@
       <meta name="description" content="1255804477">
     
     <link rel="icon" type="image/x-icon" href="2012.jpg">
-    <title>Marwan Hany EL-Nagar</title>
-    <title>برنامج داتا - تطوير مروان هاني النجار</title>
-    <link rel="manifest" href="data:application/manifest+json,{%22name%22:%22Data About%22,%22short_name%22:%22بياناتي%22,%22display%22:%22standalone%22,%22start_url%22:%22/Data-about/%22,%22background_color%22:%22%23ffffff%22,%22theme_color%22:%22%23000000%22,%22icons%22:[{%22src%22:%22https://marwanelnagar.github.io/Data-about/2012.jpg%22,%22sizes%22:%22512x512%22,%22type%22:%22image/png%22}]}">    
-    
-    
-    <link rel="manifest" href="data:application/manifest+json,{%22name%22:%22Data About%22,%22short_name%22:%22بياناتي%22,%22display%22:%22standalone%22,%22start_url%22:%22/Data-about/%22,%22background_color%22:%22%23ffffff%22,%22theme_color%22:%22%23000000%22,%22icons%22:[{%22src%22:%22https://marwanelnagar.github.io/Data-about/2012.jpg%22,%22sizes%22:%22512x512%22,%22type%22:%22image/jpeg%22}]}">
 
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('data:text/javascript;base64,c2VsZi5hZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIChlKSA9PiB7fSk7');
-  }
-</script>
-    <link rel="icon" type="image/jpeg" href="2012.jpg">
-    <link rel="shortcut icon" href="2012.jpg" type="image/x-icon">
-    <link rel="apple-touch-icon" href="2012.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwan Hany EL-Nagar | مروان هاني</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700;900&display=swap');
         
         :root {
-            --p-color: #60a5fa; /* Blue 400 */
-            --s-color: #a78bfa; /* Violet 400 */
-            --bg-dark: #02040a;
+            --primary: #fbbf24; /* ذهبي */
+            --secondary: #3b82f6; /* أزرق */
+            --bg-dark: #050505;
+            --card-bg: rgba(20, 20, 20, 0.9);
         }
 
         body {
-            font-family: 'Tajawal', sans-serif;
+            font-family: 'Cairo', sans-serif;
             background-color: var(--bg-dark);
             color: #e2e8f0;
-            min-height: 100vh;
+            margin: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            overflow-x: hidden;
-            margin: 0;
+            min-height: 100vh;
         }
 
-        /* --- خلفية فخمة وهادئة --- */
-        .luxury-bg {
+        /* تأثيرات الإضاءة في الخلفية */
+        .neon-bg {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
+            inset: 0;
             z-index: -1;
             background: 
-                radial-gradient(circle at 0% 0%, rgba(30, 58, 138, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 100% 100%, rgba(88, 28, 135, 0.15) 0%, transparent 40%);
+                radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 100% 100%, rgba(251, 191, 36, 0.08) 0%, transparent 40%);
         }
 
-        /* تأثير الجزيئات الهادئة */
-        .stars {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1;
-            background: url('https://www.transparenttextures.com/patterns/stardust.png');
-            opacity: 0.2;
+        /* الحاوية الرئيسية */
+        .container-wrapper {
+            width: 90%;
+            max-width: 480px;
+            padding: 3rem 0;
         }
 
-        /* --- كارت الفخامة --- */
-        .main-card {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 3rem;
+        /* كارت البروفايل */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .img-frame {
             position: relative;
-            box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.8);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 1rem;
         }
 
-        .main-card:hover {
-            border-color: rgba(96, 165, 250, 0.2);
-        }
-
-        /* حواف مضيئة خفيفة جداً */
-        .card-glow {
-            position: absolute;
-            inset: -1px;
-            background: linear-gradient(135deg, rgba(96, 165, 250, 0.2), transparent, rgba(167, 139, 250, 0.2));
-            border-radius: 3rem;
-            z-index: -1;
-            opacity: 0.5;
-        }
-
-        /* --- صورة البروفايل --- */
-        .image-frame {
-            position: relative;
-            width: 140px;
-            height: 140px;
-            margin: 0 auto;
-        }
-
-        .image-frame img {
+        .img-frame img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 2.8rem;
-            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            border: 2px solid var(--primary);
             padding: 5px;
-            background: rgba(0, 0, 0, 0.2);
+            background: #111;
         }
 
-        .online-indicator {
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            width: 16px;
-            height: 16px;
-            background: #22c55e;
-            border-radius: 50%;
-            border: 3px solid #0f172a;
+        /* العناوين */
+        .group-label {
+            font-size: 0.7rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            margin: 2rem 0 1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
+        .group-label::after { content: ""; flex: 1; height: 1px; background: linear-gradient(to left, var(--primary), transparent); opacity: 0.2; }
 
-        .pulse-ring {
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            width: 16px;
-            height: 16px;
-            background: #22c55e;
-            border-radius: 50%;
-            animation: pulse-ring 2s infinite;
-        }
-
-        @keyframes pulse-ring {
-            0% { transform: scale(1); opacity: 0.8; }
-            100% { transform: scale(2.5); opacity: 0; }
-        }
-
-        /* --- روابط بلمسة ناعمة --- */
-        .link-btn {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.03);
+        /* الأزرار المطورة */
+        .link-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.2rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8rem;
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
         }
 
-        .link-btn:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(96, 165, 250, 0.3);
-            transform: scale(1.02);
+        .link-card:hover {
+            transform: translateY(-3px) scale(1.01);
+            border-color: var(--secondary);
+            background: rgba(30, 30, 30, 1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .link-btn i {
-            transition: all 0.4s ease;
-            filter: grayscale(1);
-            opacity: 0.6;
+        .icon-circle {
+            width: 45px;
+            height: 45px;
+            background: #111;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--primary);
+            transition: 0.3s;
         }
 
-        .link-btn:hover i {
-            filter: grayscale(0);
-            opacity: 1;
-            transform: rotate(-10deg) scale(1.1);
+        .link-card:hover .icon-circle {
+            background: var(--secondary);
+            color: white;
+            transform: rotate(-10deg);
         }
 
-        /* إخفاء الروابط التي لم تضف لها رابط حقيقي بعد */
-        .dynamic-link[href="#"], .dynamic-link[href=""] {
-            display: none !important;
+        /* السهم الجانبي */
+        .side-arrow {
+            margin-right: auto;
+            font-size: 0.8rem;
+            color: #444;
+            transition: 0.3s;
+        }
+        .link-card:hover .side-arrow {
+            color: var(--secondary);
+            transform: translateX(-5px);
         }
 
-        /* انيميشن الظهور التدريجي */
-        .reveal {
-            animation: revealEffect 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-            opacity: 0;
+        /* قسم الفريق بنظام Cards متطورة */
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
         }
 
-        @keyframes revealEffect {
-            from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
-            to { opacity: 1; transform: translateY(0); filter: blur(0); }
+        .team-btn {
+            background: #111;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem 1rem;
+            border-radius: 1.5rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .team-btn:hover {
+            border-color: var(--primary);
+            background: rgba(251, 191, 36, 0.05);
         }
 
+        /* منع دوران أيقونة العجلة - فقط حركة بسيطة عند الهوفر */
+        .no-spin { animation: none !important; }
+        .link-card:hover .no-spin { transform: scale(1.2) rotate(15deg); }
 
-        /* ... الأكواد القديمة بتاعتك ... */
-
-/* أضف كود الفاصل في النهاية */
-.modern-divider {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #007bff, rgba(0, 0, 0, 0));
-  margin: 50px 0; /* دي بتسيب مسافة 50 بكسل فوق وتحت الخط */
-
-
-
-
-
-  .separator {
-    text-align: center;
-    margin: 25px 0 15px;
-    font-size: 14px;
-    color: #888; /* لون رمادي هادي */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: flex;
-    justify-content: center;
-}
-
-.separator::before, .separator::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.1); /* خط شفاف بسيط */
-    margin: 0 15px;
-}
-
-
-}
     </style>
 </head>
 <body>
 
-   
+    <div class="neon-bg"></div>
 
-  
-    <div class="luxury-bg"></div>
-    <div class="stars"></div>
-
-    <div class="main-card w-full max-w-[400px] p-8 m-4 reveal">
-        <div class="card-glow"></div>
-        
-        <!-- الهيدر -->
-        <div class="text-center mb-8">
-            <div class="image-frame mb-6">
-                <div class="pulse-ring"></div>
-                <div class="online-indicator"></div>
-                <!-- صورتك الشخصية 2012.jpg -->
-                <img src="2012.jpg" 
-                     
-                     alt="مروان هاني النجار">
+    <div class="container-wrapper">
+        <!-- البروفايل -->
+        <header class="profile-header">
+            <div class="img-frame">
+                <img src="2012.jpg" alt="Marwan Hany EL-Nagar">
             </div>
-            
-            <h1 class="text-3xl font-black text-white tracking-tight mb-1">مروان هاني النجار</h1>
-            <p class="text-slate-500 text-xs font-medium tracking-[0.3em] uppercase mb-4">Software Engineer</p>
-            
-            <div class="h-px w-12 bg-blue-500/50 mx-auto"></div>
-        </div>
+            <h1 class="text-2xl font-bold text-white tracking-wide">مروان هاني النجار</h1>
+            <p class="text-gray-500 text-xs mt-1 uppercase tracking-widest font-bold">Software Engineer & Student</p>
+        </header>
 
-        <!-- الروابط الفاخرة -->
-        <div class="space-y-3 mb-8">
+        <!-- روابط التواصل -->
+        <div class="group-label">تواصل مباشر</div>
+        
+        <a href="https://wa.me/201011960156" target="_blank" class="link-card">
+            <div class="icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="mr-4">
+                <p class="text-[10px] text-gray-500 font-bold uppercase">WhatsApp</p>
+                <p class="text-sm font-bold text-gray-200">مراسلة فورية</p>
+            </div>
+            <i class="fa-solid fa-arrow-left side-arrow"></i>
+        </a>
 
         
 
-            
-            <!-- اتصال -->
-            <a href="tel:+201029536146" class="link-btn flex items-center p-4 rounded-2xl group">
-                <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-slate-800/50 text-slate-300 group-hover:text-blue-400">
-                    <i class="fa-solid fa-phone-volume"></i>
-                </div>
-                <div class="mr-4 text-right flex-1">
-                    <span class="block text-[10px] text-slate-500 font-bold uppercase">الهاتف الشخصي</span>
-                    <span class="text-sm font-bold text-slate-200" dir="ltr">Marwan EL-Nagar</span>
-                </div>
+        <a href="https://www.instagram.com/MARWAN.HANY.EL_NAGAR/" target="_blank" class="link-card">
+            <div class="icon-circle"><i class="fa-brands fa-instagram"></i></div>
+            <div class="mr-4">
+                <p class="text-sm font-bold text-gray-200">إنستجرام</p>
+            </div>
+            <i class="fa-solid fa-arrow-left side-arrow"></i>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100025165743507&rdid=UBHXtSRSJCNG75xw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1D8wc1NmJC%2F#" target="_blank" class="link-card">
+            <div class="icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="mr-4">
+                <p class="text-sm font-bold text-gray-200">فيسبوك</p>
+            </div>
+            <i class="fa-solid fa-arrow-left side-arrow"></i>
+        </a>
+
+         <a href="https://t.me/MarwanHELnagar" target="_blank" class="link-card">
+            <div class="icon-circle"><i class="fa-brands fa-telegram"></i></div>
+            <div class="mr-4">
+                <p class="text-[10px] text-gray-400 font-bold uppercase">Telegram</p>
+                <p class="text-sm font-bold text-gray-200">تليجرام</p>
+            </div>
+            <i class="fa-solid fa-arrow-left side-arrow"></i>
+        </a>
+
+        <a href="tel:+201011960156" class="link-card">
+            <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+            <div class="mr-4">
+                <p class="text-sm font-bold text-gray-200">اتصال هاتفي</p>
+            </div>
+            <i class="fa-solid fa-arrow-left side-arrow"></i>
+        </a>
+
+       
+
+        <!-- المشاريع والبرامج -->
+        <div class="group-label">المشاريع والبرامج</div>
+
+        <a href="https://marwanelnagar.github.io/wheel/" target="_blank" class="link-card">
+            <div class="icon-circle no-spin"><i class="fa-solid fa-dharmachakra"></i></div>
+            <div class="mr-4">
+                <p class="text-[10px] text-amber-500 font-bold"></p>
+                <p class="text-sm font-bold text-gray-200">برنامج عجلة الحظ</p>
+            </div>
+            <i class="fa-solid fa-arrow-left side-arrow"></i>
+        </a>
+
+        <a href="https://marwanelnagar.github.io/shahada/" target="_blank" class="link-card">
+            <div class="icon-circle"><i class="fa-solid fa-file-signature"></i></div>
+            <div class="mr-4">
+                <p class="text-sm font-bold text-gray-200">برنامج منشئ الشهادات</p>
+            </div>
+            <i class="fa-solid fa-arrow-left side-arrow"></i>
+        </a>
+
+        <a href="https://emla-a.web.app" target="_blank" class="link-card">
+            <div class="icon-circle"><i class="fa-solid fa-user-gear"></i></div>
+            <div class="mr-4">
+                <p class="text-sm font-bold text-gray-200">نظام إملاء (إدارة الطلاب)</p>
+            </div>
+            <i class="fa-solid fa-arrow-left side-arrow"></i>
+        </a>
+
+        <a href="https://marwanelnagar.github.io/zezo/" target="_blank" class="link-card">
+            <div class="icon-circle"><i class="fa-solid fa-brain"></i></div>
+            <div class="mr-4">
+                <p class="text-sm font-bold text-gray-200">لعبة تنمية الذكاء</p>
+            </div>
+            <i class="fa-solid fa-arrow-left side-arrow"></i>
+        </a>
+
+        <!-- فريق M&Z -->
+        <div class="group-label">M&Z TEAM</div>
+        <div class="team-grid">
+            <a href="https://whatsapp.com/channel/0029Vb6zrcoISTkQl5Fvto1S" target="_blank" class="team-btn group">
+                <i class="fa-brands fa-whatsapp text-2xl text-green-500 mb-2 block group-hover:scale-110"></i>
+                <span class="text-xs font-bold text-white">قناة الواتساب</span>
             </a>
-
-            <!-- واتساب -->
-            <a href="https://wa.me/201029536146" target="_blank" class="link-btn flex items-center p-4 rounded-2xl group">
-                <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-green-500/10 text-green-400">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                </div>
-                <div class="mr-4 text-right flex-1">
-                    <span class="block text-[10px] text-slate-500 font-bold uppercase">واتساب</span>
-                    <span class="text-sm font-bold text-slate-200" dir="ltr">Marwan Hany</span>
-                </div>
+            <a href="https://www.facebook.com/profile.php?id=61586174637398" target="_blank" class="team-btn group">
+                <i class="fa-brands fa-facebook text-2xl text-blue-500 mb-2 block group-hover:scale-110"></i>
+                <span class="text-xs font-bold text-white">صفحة الفيسبوك</span>
             </a>
-
-            <!-- فيسبوك -->
-            <a href="https://www.facebook.com/profile.php?id=100025165743507&rdid=UBHXtSRSJCNG75xw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1D8wc1NmJC%2F#" target="_blank" class="link-btn flex items-center p-4 rounded-2xl group">
-                <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-blue-600/10 text-blue-500">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="mr-4 text-right flex-1">
-                    <span class="block text-[10px] text-slate-500 font-bold uppercase"> فيسبوك الملف الشخصي</span>
-                    <span class="text-sm font-bold text-slate-200">Marwan Hany El-Nagar</span>
-                </div>
-            </a>
-
-            <!-- انستجرام -->
-            <a href="https://www.instagram.com/MARWAN.HANY.EL_NAGAR/" target="_blank" class="link-btn flex items-center p-4 rounded-2xl group">
-                <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-pink-500/10 text-pink-400">
-                    <i class="fa-brands fa-instagram text-lg"></i>
-                </div>
-                <div class="mr-4 text-right flex-1">
-                    <span class="block text-[10px] text-slate-500 font-bold uppercase">انستجرام</span>
-                    <span class="text-sm font-bold text-slate-200">@Marwan.Hany.EL-Nagar</span>
-                </div>
-            </a>
-
-           
-         <a href="https://t.me/MarwanHELnagar" target="_blank" class="dynamic-link link-btn flex items-center p-4 rounded-2xl group border-blue-500/20">
-    <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-sky-500/10 text-sky-400">
-        <i class="fa-brands fa-telegram text-2xl"></i> 
-    </div>
-    <div class="mr-4 text-right flex-1">
-        <span class="block text-[10px] text-slate-500 font-bold uppercase">telegram</span>
-        <span class="text-sm font-bold text-slate-200">t.me/MarwanHELnagar</span>
-    </div>
-</a>
-            
-            
-            
-            
-            <a href="#" target="_blank" class="dynamic-link link-btn flex items-center p-4 rounded-2xl group border-blue-500/20">
-                <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-blue-500/10 text-blue-400">
-                    <i class="fa-solid fa-link"></i>
-                </div>
-                <div class="mr-4 text-right flex-1">
-                    <span class="block text-[10px] text-slate-500 font-bold uppercase"></span>
-                    <span class="text-sm font-bold text-slate-200"></span>
-                </div>
-            </a>
-
-            <!-- -------------------------------------------------------------------------------------- -->
-
-
-              <hr class="modern-divider">
-
-            <div class="text-center">
-
-
-
-          <h1 class="text-xl font-black text-white tracking-tight mb-1"> 💻 برامج ومشاريع  💻 </h1>
-
-            
-
-            
-            
-
-            
- <!-- روابط ويب (ستظهر تلقائياً بمجرد استبدال # برابط حقيقي) -->
-   
-<a href="https://emla-a.web.app" target="_blank" class="mb-4 dynamic-link link-btn flex items-center p-4 rounded-2xl group border-blue-500/20">
-    <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-blue-500/10 text-blue-400">
-        <i class="fa-solid fa-user-graduate text-xl"></i>
-    </div>
-    <div class="mr-4 text-right flex-1">
-        <span class="block text-[10px] text-slate-500 font-bold uppercase">برنامج ادارة الطلاب</span>
-        <span class="text-sm font-bold text-slate-200">emla-a.web.app</span>
-    </div>
-</a>
-
-<a href="https://marwanelnagar.github.io/zezo/" target="_blank" class="mb-4 dynamic-link link-btn flex items-center p-4 rounded-2xl group border-blue-500/20">
-    <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-400">
-        <i class="fa-solid fa-brain text-xl"></i>
-    </div>
-    <div class="mr-4 text-right flex-1">
-        <span class="block text-[10px] text-slate-500 font-bold uppercase">لعبة ذكاء</span>
-
-        <span class="text-sm font-bold text-slate-200">PROG Zeyad Hany EL-Nagar</span> <span class="hidden lg:inline-block text-[9px] bg-red-500/10 text-red-400 border border-red-500/20 px-1.5 py-0.5 rounded-md">
-                تجريبي 
-        </span>
-    </div>
-</a>
-
-                <a href="https://marwanelnagar.github.io/shahada/" target="_blank" class="mb-4 dynamic-link link-btn flex items-center p-4 rounded-2xl group border-blue-500/20">
-    <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-amber-400/10 text-amber-300">
-      <i class="fa-solid fa-certificate"></i>
-    </div>
-    <div class="mr-4 text-right flex-1">
-        <div class="flex items-center gap-2">
-            <span class="block text-[10px] text-slate-500 font-bold uppercase">منشئ الشهادات</span>
-            <span class="hidden lg:inline-block text-[9px] bg-red-500/10 text-red-400 border border-red-500/20 px-1.5 py-0.5 rounded-md">
-                للكمبيوتر فقط
-            </span>
-        </div>
-        <span class="text-sm font-bold text-slate-200">shahadat</span>
-    </div>
-                </a>
-                
-
-
- 
         </div>
 
-<!----------------------------------------------------->
-             <hr class="modern-divider">
-
-            <div class="text-center">
-
-
-
-          <h1 class="text-xl font-black text-white tracking-tight mb-1"> 💠قنوات وصفح 💠 </h1>
-
-
-                <a href="https://whatsapp.com/channel/0029Vb6zrcoISTkQl5Fvto1S" target="_blank" class=" mb-4 dynamic-link link-btn flex items-center p-4 rounded-2xl group border-blue-500/20">
-    <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
-      <i class="fa-brands fa-whatsapp"></i>
-    </div>
-    <div class="mr-4 text-right flex-1">
-        <span class="block text-[10px] text-slate-500 font-bold uppercase">قناة الواتساب</span>
-        <span class="text-sm font-bold text-slate-200">M&Z Programming Team WhatsApp Channel</span>
-    </div>
-</a>
-
-
- <a href="https://www.facebook.com/profile.php?id=61586174637398" target="_blank" class=" mb-4 dynamic-link link-btn flex items-center p-4 rounded-2xl group border-blue-500/20">
-    <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-blue-600/10 text-blue-500">
-      <i class="fa-brands fa-facebook text-xl"></i>
-    </div>
-    <div class="mr-4 text-right flex-1">
-        <span class="block text-[10px] text-slate-500 font-bold uppercase">صفحة الفيسبوك</span>
-        <span class="text-sm font-bold text-slate-200">M&Z Programming Team Facebook page</span>
-    </div>
-</a>
-
-
-        <!-- التذييل -->
-                
-        <div class="text-center">
-            <p class="text-[9px] text-slate-600 font-black uppercase tracking-[0.4em]">
-                Marwan Hany EL-Nagar &copy; 2026
+        <!-- Footer -->
+        <footer class="mt-12 text-center pb-8">
+            <p class="text-[9px] text-gray-600 font-bold uppercase tracking-[0.5em]">
+                &copy; 2026 Marwan Hany EL-Nagar
             </p>
-        </div>
+        </footer>
     </div>
 
-        
-        </body>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
