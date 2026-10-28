@@ -11,7 +11,7 @@ import {initializeApp} from "https://www.gstatic.com/firebasejs/11.10.0/firebase
 import {getAuth,setPersistence,browserLocalPersistence,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import {getFirestore,collection,addDoc,getDocs,doc,updateDoc,deleteDoc} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 // ضع إعدادات تطبيق الويب من Firebase هنا. لا تضع أي مفتاح خدمة خاص.
-const firebaseConfig={apiKey:"PASTE_YOUR_FIREBASE_WEB_API_KEY_HERE",authDomain:"altayseer-smart-system.firebaseapp.com",projectId:"altayseer-smart-system",storageBucket:"altayseer-smart-system.firebasestorage.app",messagingSenderId:"218235395174",appId:"1:218235395174:web:7759c7c86cdb29565621a7"};
+const firebaseConfig={apiKey:"AIzaSyAI4MGTrHQuXk74eXI-YhjxoeZ21kyaBuc",authDomain:"altayseer-smart-system.firebaseapp.com",projectId:"altayseer-smart-system",storageBucket:"altayseer-smart-system.firebasestorage.app",messagingSenderId:"218235395174",appId:"1:218235395174:web:7759c7c86cdb29565621a7",measurementId:"G-DEVE7LK2WT"};
 const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);let mode="login",user=null,items=[];
 const $=x=>document.getElementById(x);$("date").value=new Date(Date.now()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,10);
 setPersistence(auth,browserLocalPersistence);
